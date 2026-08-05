@@ -72,6 +72,11 @@ python -m src.post_deals
 ## Onde conseguir os links de afiliado
 
 - **Amazon Associates**: [associados.amazon.com.br](https://associados.amazon.com.br)
+  — ID de Associado aprovado: **`ofertasinfo-20`**. Todo link da Amazon
+  precisa terminar com `?tag=ofertasinfo-20` (ou `&tag=ofertasinfo-20` se a
+  URL já tiver outros parâmetros) pra comissão ser contabilizada. O
+  [Gerador de Links do Portal de Associados](https://associados.amazon.com.br)
+  já monta isso automaticamente.
 - **KaBum (via Awin)**: cadastro na [Awin](https://www.awin.com/br) e solicitação
   do programa KaBum
 - **Magazine Luiza (Parceiro Magalu)**: cadastro direto no site do Magalu
