@@ -1,4 +1,4 @@
-# mercado_livre — Canal de Ofertas de Informática
+# ofertas_informatica — Canal de Ofertas de Informática
 
 Estrutura para divulgar ofertas de informática/computação em um canal do
 Telegram, com links de afiliado de múltiplas fontes (Amazon, KaBum, Magazine
@@ -87,7 +87,7 @@ pra isso e ainda direciona visitantes pro canal do Telegram.
 
 1. No GitHub, vá em **Settings → Pages**
 2. Em "Source", selecione a branch `main` e a pasta `/docs`
-3. Salve — a URL fica algo como `https://felipeguntzel.github.io/mercado_livre/`
+3. Salve — a URL fica algo como `https://felipeguntzel.github.io/ofertas_informatica/`
 4. Use essa URL nos formulários de cadastro de afiliado
 
 **Antes de publicar:** edite `docs/index.html` e troque
