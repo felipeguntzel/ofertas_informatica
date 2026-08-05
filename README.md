@@ -77,6 +77,22 @@ python -m src.post_deals
 - **Magazine Luiza (Parceiro Magalu)**: cadastro direto no site do Magalu
 - **Shopee**: programa de afiliados Shopee
 
+## Landing page (para cadastro em programas de afiliados)
+
+Programas como Amazon Associates e Awin (KaBum) exigem uma URL de site/app no
+cadastro. Este repo já tem uma página pronta em `docs/index.html` que serve
+pra isso e ainda direciona visitantes pro canal do Telegram.
+
+**Ativar o GitHub Pages:**
+
+1. No GitHub, vá em **Settings → Pages**
+2. Em "Source", selecione a branch `main` e a pasta `/docs`
+3. Salve — a URL fica algo como `https://felipeguntzel.github.io/mercado_livre/`
+4. Use essa URL nos formulários de cadastro de afiliado
+
+**Antes de publicar:** edite `docs/index.html` e troque
+`https://t.me/SEU_CANAL_AQUI` pelo link real do seu canal do Telegram.
+
 ## Próximos passos possíveis
 
 - Agendar `post_deals.py` para rodar automaticamente (cron, GitHub Actions).
