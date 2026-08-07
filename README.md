@@ -69,6 +69,33 @@ Categorias sugeridas: `notebook`, `placa_de_video`, `processador`,
 python -m src.post_deals
 ```
 
+## 5. Automatizar a publicação (GitHub Actions)
+
+O workflow `.github/workflows/post-deals.yml` roda `post_deals.py`
+automaticamente **uma vez por hora**, na nuvem do GitHub — não depende do
+seu PC estar ligado. Ele publica as ofertas pendentes e faz commit de volta
+no repositório marcando-as como já postadas (`"posted": true`), pra não
+repetir.
+
+**Configurar (uma vez só):**
+
+1. No repositório, vá em **Settings → Secrets and variables → Actions**
+2. Clique em **New repository secret** e crie:
+   - `TELEGRAM_BOT_TOKEN` — o token do BotFather
+   - `TELEGRAM_CHANNEL_ID` — o `@usuario` (ou ID numérico) do canal
+3. Pronto. O workflow já roda sozinho a partir da próxima hora cheia.
+
+**Testar na hora**, sem esperar o cron: aba **Actions** do repositório →
+selecione o workflow **"Post pending deals to Telegram"** → **Run workflow**.
+
+**Ajustar a frequência:** edite a linha `cron:` no arquivo do workflow
+(ex: `*/30 * * * *` para a cada 30 minutos — o mínimo prático são uns 15 min,
+já que o agendador do GitHub não garante precisão de minuto a minuto).
+
+**Atenção:** o GitHub desativa workflows agendados automaticamente depois de
+**60 dias sem nenhum commit** no repositório. Se isso acontecer, basta abrir
+a aba Actions e reativar o workflow manualmente.
+
 ## Onde conseguir os links de afiliado
 
 - **Amazon Associates**: [associados.amazon.com.br](https://associados.amazon.com.br)
@@ -100,7 +127,9 @@ pra isso e ainda direciona visitantes pro canal do Telegram.
 
 ## Próximos passos possíveis
 
-- Agendar `post_deals.py` para rodar automaticamente (cron, GitHub Actions).
-- Buscar ofertas automaticamente por categoria em cada fonte (APIs oficiais
-  quando disponíveis, respeitando os termos de uso de cada loja).
+- Buscar ofertas automaticamente por categoria em cada fonte. Para a Amazon,
+  isso depende de acesso à Creators API, liberado só a partir de 10 vendas
+  qualificadas nos últimos 30 dias — até lá, a curadoria é manual. Para o
+  KaBum, vale checar o feed de produtos da Awin quando o cadastro for
+  aprovado.
 - Replicar o mesmo conteúdo em outros canais (Instagram, WhatsApp).
