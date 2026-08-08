@@ -15,21 +15,21 @@
     "title": "Apple iPhone 17 256GB - Preto",
     "category": "acessorio",
     "source": "amazon",
-    "price": 5299.00,
+    "price": 5299.0,
     "affiliate_link": "https://www.amazon.com.br/Apple-iPhone-17-256-GB/dp/B0GQW2J4SK?tag=ofertasinfo-20&linkCode=sl2&linkId=b0b0d07b56de36c26743415b1bef8de0&ref_=as_li_ss_tl",
-    "original_price": 7999.00,
+    "original_price": 7999.0,
     "image_url": null,
-    "posted": false
+    "posted": true
   },
   {
     "id": "moto-g35-5g-128gb",
     "title": "Motorola Moto g35 5G 128GB 12GB (4GB+8GB Ram Boost) Tela 6.7\" - Verde",
     "category": "acessorio",
     "source": "amazon",
-    "price": 849.00,
+    "price": 849.0,
     "affiliate_link": "https://www.amazon.com.br/Smartphone-Motorola-Moto-g35-Superbrilho/dp/B0DHWFBYVC?_encoding=UTF8&pd_rd_w=7U8mQ&content-id=amzn1.sym.19eb8d98-6af2-40c1-8b24-e3a31f2518e5%3Aamzn1.symc.5a16118f-86f0-44cd-8e3e-6c5f82df43d0&pf_rd_p=19eb8d98-6af2-40c1-8b24-e3a31f2518e5&pf_rd_r=3AC37S4V3YGMARVY23W2&pd_rd_wg=hJG7o&pd_rd_r=f470b05f-3382-4783-9c39-2d583ce096a9&th=1&linkCode=ll2&tag=ofertasinfo-20&linkId=5a84e07e5ce4fc5d91a8b9ee3235263a&ref_=as_li_ss_tl",
-    "original_price": 1499.00,
+    "original_price": 1499.0,
     "image_url": null,
-    "posted": false
+    "posted": true
   }
 ]
