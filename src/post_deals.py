@@ -46,7 +46,15 @@ def main() -> None:
         message = deal.build_message()
         try:
             if deal.image_url:
-                client.send_photo(deal.image_url, message)
+                try:
+                    client.send_photo(deal.image_url, message)
+                except Exception as photo_exc:
+                    print(
+                        f"⚠️ Imagem falhou para '{deal.title}' ({photo_exc}), "
+                        "postando sem imagem",
+                        file=sys.stderr,
+                    )
+                    client.send_message(message)
             else:
                 client.send_message(message)
             deal.posted = True
